@@ -24,6 +24,7 @@
     <sprite>sprites\spr_playerrun</sprite>
     <sprite>sprites\spr_playerstand</sprite>
     <sprite>sprites\spr_playermask</sprite>
+    <sprite>sprites\spr_menu_arrow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -32,10 +33,10 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script0.gml</script>
+    <script>scripts\scr_start_menu.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\font0</font>
+    <font>fonts\Menu</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -51,8 +52,10 @@
     <object>objects\obj_warp</object>
     <object>objects\obj_sign_inactive</object>
     <object>objects\obj_camera</object>
+    <object>objects\obj_start_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_start_menu</room>
     <room>rooms\rm_test</room>
     <room>rooms\room1</room>
   </rooms>
