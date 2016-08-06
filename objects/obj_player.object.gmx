@@ -29,7 +29,7 @@
 grav = 1;
 hsp = 0;
 vsp = 0;
-jumpspeed = 10;
+jumpspeed = 15;
 movespeed = 6;
 </string>
           </argument>
@@ -115,16 +115,19 @@ key_left = -keyboard_check(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
 key_up = keyboard_check_direct(vk_up);
 key_down = keyboard_check_direct(vk_down);
+key_jump_held = keyboard_check(vk_space);
 
 //React to Inputs
 move = key_left + key_right;
 hsp = move * movespeed;
-if (vsp &lt; 10) vsp += grav;
+if (vsp &lt; 10) then vsp += grav;
 
 if (place_meeting(x,y+1,obj_wall))
 {
     vsp = key_jump * -jumpspeed
 }
+
+if (vsp &lt; 0) &amp;&amp; (!key_jump_held) then vsp = max(vsp,-jumpspeed/4);
 
 //Horizontal Collision
 if (place_meeting (x+hsp,y-1, obj_wall))
