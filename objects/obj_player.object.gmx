@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Intialize Variables
-grav = 1;
+grav = 2;
 hsp = 0;
 vsp = 0;
 jumpspeed = 15;
@@ -122,7 +122,7 @@ move = key_left + key_right;
 hsp = move * movespeed;
 if (vsp &lt; 10) then vsp += grav;
 
-if (place_meeting(x,y+1,obj_wall))
+if (place_meeting(x,y+2,obj_wall))
 {
     vsp = key_jump * -jumpspeed
 }
@@ -141,7 +141,7 @@ if (place_meeting (x+hsp,y-1, obj_wall))
 x += hsp;
 
 //Vertical Collision
-if (place_meeting (x,y+vsp, obj_wall))
+if (place_meeting (x,y-1+vsp,obj_wall))
 {
 
     while(!place_meeting(x,y+sign(vsp),obj_wall))
@@ -160,13 +160,17 @@ if (key_up || key_down)
 
 if (ladder)
 {
-    vsp = 0;
-    //hsp = 0;
+    grav = 0;
+      vsp = 0;
+      //hsp = 0;
     if (key_up) vsp = -5
     if (key_down) vsp = 5
     if !place_meeting(x,y,par_ladder) ladder = false
     if (key_jump) ladder = false
+    if (key_jump) vsp = -jumpspeed
+   
 }
+else grav = 1
 
 //animation and direction
 if (move!=0) image_xscale = move;
@@ -184,7 +188,7 @@ else
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_nextroom">
+    <event eventtype="4" ename="obj_rm_2_sign">
       <action>
         <libid>1</libid>
         <id>603</id>

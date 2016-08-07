@@ -30,6 +30,7 @@
     <background>background\background1</background>
     <background>background\bkg_test</background>
     <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -46,18 +47,28 @@
     <object>objects\par_ladder</object>
     <object>objects\obj_trumpettrigger</object>
     <object>objects\obj_sign_intro</object>
-    <object>objects\obj_nextroom</object>
+    <object>objects\obj_rm_2_sign</object>
     <object>objects\obj_roomtransition</object>
-    <object>objects\object9</object>
+    <object>objects\obj_startmenuwip</object>
     <object>objects\obj_warp</object>
+    <object>objects\obj_respawn</object>
     <object>objects\obj_sign_inactive</object>
     <object>objects\obj_camera</object>
     <object>objects\obj_start_menu</object>
+    <object>objects\obj_notwall</object>
+    <object>objects\obj_dong</object>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_start_menu</room>
+    <room>rooms\rm_attic_1</room>
+    <room>rooms\rm_attic_2</room>
+    <room>rooms\rm_attic_3</room>
+    <room>rooms\rm_attic_4</room>
     <room>rooms\rm_test</room>
-    <room>rooms\room1</room>
+    <room>rooms\rm_2</room>
+    <room>rooms\room4</room>
+    <room>rooms\room_bonus</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
