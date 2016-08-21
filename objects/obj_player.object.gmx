@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>///Intialize Variables
-grav = 2;
+globalgrav = 2;
 hsp = 0;
 vsp = 0;
-jumpspeed = 15;
-movespeed = 6;
+jumpspeed = 21;
+movespeed = 8;
 </string>
           </argument>
         </arguments>
@@ -120,7 +120,7 @@ key_jump_held = keyboard_check(vk_space);
 //React to Inputs
 move = key_left + key_right;
 hsp = move * movespeed;
-if (vsp &lt; 10) then vsp += grav;
+if (vsp &lt; 20) then vsp += grav;
 
 if (place_meeting(x,y+2,obj_wall))
 {
@@ -132,11 +132,20 @@ if (vsp &lt; 0) &amp;&amp; (!key_jump_held) then vsp = max(vsp,-jumpspeed/4);
 //Horizontal Collision
 if (place_meeting (x+hsp,y-1, obj_wall))
 {
-    while(!place_meeting(x+sign(hsp),y-1,obj_wall))
+    yplus = 0;
+    while (place_meeting(x=hsp,y-yplus,obj_wall) &amp;&amp; yplus &lt;=abs(1*hsp)) yplus += 1;
+    if place_meeting(x+hsp,y-yplus,obj_wall)
     {
+        while(!place_meeting(x+sign(hsp),y-1,obj_wall))
+        {
         x += sign(hsp);
-    }
+        }
     hsp = 0;
+    }
+    else
+    {
+        y -= yplus;
+    }
 }
 x += hsp;
 
@@ -170,7 +179,7 @@ if (ladder)
     if (key_jump) vsp = -jumpspeed
    
 }
-else grav = 1
+else grav = globalgrav
 
 //animation and direction
 if (move!=0) image_xscale = move;

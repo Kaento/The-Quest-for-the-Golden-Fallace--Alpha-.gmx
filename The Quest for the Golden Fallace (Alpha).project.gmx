@@ -25,6 +25,7 @@
     <sprite>sprites\spr_playerstand</sprite>
     <sprite>sprites\spr_playermask</sprite>
     <sprite>sprites\spr_menu_arrow</sprite>
+    <sprite>sprites\fht</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -57,8 +58,8 @@
     <object>objects\obj_start_menu</object>
     <object>objects\obj_notwall</object>
     <object>objects\obj_dong</object>
+    <object>objects\object17</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\rm_start_menu</room>
     <room>rooms\rm_attic_1</room>
