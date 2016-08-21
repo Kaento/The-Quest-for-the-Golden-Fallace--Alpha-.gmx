@@ -31,6 +31,7 @@ hsp = 0;
 vsp = 0;
 jumpspeed = 21;
 movespeed = 8;
+vol = 0.5;
 </string>
           </argument>
         </arguments>
@@ -113,9 +114,18 @@ ladder = false;
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
-key_up = keyboard_check_direct(vk_up);
-key_down = keyboard_check_direct(vk_down);
+key_up = keyboard_check(vk_up);
+key_down = keyboard_check(vk_down);
 key_jump_held = keyboard_check(vk_space);
+
+audio_sound_gain(snd_bgm_sunflowerfield,vol,0)
+
+///BGM Volume Control
+if (keyboard_check(ord('V')))
+    {
+    if(keyboard_check_pressed(vk_up) &amp;&amp; vol &lt; 1) vol += 0.1;
+    if(keyboard_check_pressed(vk_down) &amp;&amp; vol &gt; 0) vol -= 0.1;
+    } 
 
 //React to Inputs
 move = key_left + key_right;

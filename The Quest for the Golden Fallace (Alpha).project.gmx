@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_trumpet</sound>
+    <sound>sound\snd_bgm_sunflowerfield</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_trigger</sprite>
@@ -32,6 +33,8 @@
     <background>background\bkg_test</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\background5</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

@@ -32,6 +32,8 @@ menu[1] = "Quit";
 space = 64;
 menu_position = 0;
 
+audio_play_sound(snd_bgm_sunflowerfield,99,true)
+audio_sound_gain(snd_bgm_sunflowerfield,0.5,0)
 </string>
           </argument>
         </arguments>
