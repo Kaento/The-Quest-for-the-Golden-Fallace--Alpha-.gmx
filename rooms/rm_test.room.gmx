@@ -109,7 +109,7 @@
     <instance objName="par_ladder" x="544" y="320" name="inst_72A3620A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign_intro" x="64" y="672" name="inst_1E118FA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="320" y="320" name="inst_A0479059" locked="0" code="" scaleX="3" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="1024" y="256" name="inst_FE81D698" locked="0" code="target_x = 32;&#xA;target_y = 672;&#xA;target_r = rm_2&#xA;" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="1024" y="256" name="inst_FE81D698" locked="0" code="target_x = 32;&#xA;target_y = 672;&#xA;target_r = rm_2&#xA;play_sfx = 0;&#xA;" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign_inactive" x="960" y="672" name="inst_595AE60B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_ladder" x="192" y="672" name="inst_5D548260" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

@@ -61,11 +61,11 @@
     <instance objName="obj_dong" x="416" y="576" name="inst_6E329307" locked="0" code="" scaleX="7" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_dong" x="544" y="640" name="inst_2A8282F7" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_trumpettrigger" x="128" y="352" name="inst_1428947D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="0" y="0" name="inst_DFC74827" locked="0" code="target_x = 544;&#xA;target_y = 672;&#xA;target_r = rm_attic_2;" scaleX="3" scaleY="22.6774196624756" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="160" y="608" name="inst_8B27A494" locked="0" code="target_x = 960;&#xA;target_y = 64;&#xA;target_r = rm_attic_1;&#xA;" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="320" y="640" name="inst_C7BAF525" locked="0" code="target_x = 64;&#xA;target_y = 64;&#xA;target_r = rm_2;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="448" y="672" name="inst_DCA7B1BD" locked="0" code="target_x = 64;&#xA;target_y = 64;&#xA;target_r = rm_test;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="544" y="704" name="inst_4FA41956" locked="0" code="target_x = 128;&#xA;target_y = 50;&#xA;target_r = rm_start_menu;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="0" y="0" name="inst_DFC74827" locked="0" code="target_x = 544;&#xA;target_y = 672;&#xA;target_r = rm_attic_2;&#xA;play_sfx = 0;&#xA;" scaleX="3" scaleY="22.6774196624756" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="160" y="608" name="inst_8B27A494" locked="0" code="target_x = 960;&#xA;target_y = 64;&#xA;target_r = rm_attic_1;&#xA;play_sfx = 1;&#xA;target_snd = snd_splash;&#xA;" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="320" y="640" name="inst_C7BAF525" locked="0" code="target_x = 64;&#xA;target_y = 64;&#xA;target_r = rm_2;&#xA;play_sfx = 1;&#xA;target_snd = snd_splash;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="448" y="672" name="inst_DCA7B1BD" locked="0" code="target_x = 64;&#xA;target_y = 64;&#xA;target_r = rm_test;&#xA;play_sfx = 1;&#xA;target_snd = snd_splash;&#xA;" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="544" y="704" name="inst_4FA41956" locked="0" code="target_x = 128;&#xA;target_y = 50;&#xA;target_r = rm_start_menu;&#xA;play_sfx = 1;&#xA;target_snd = snd_splash;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

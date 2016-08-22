@@ -32,6 +32,9 @@ vsp = 0;
 jumpspeed = 21;
 movespeed = 8;
 vol = 0.5;
+global.chkpt_x = obj_player.x;
+global.chkpt_y = obj_player.y;
+global.chkpt_rm = room;
 </string>
           </argument>
         </arguments>
@@ -64,34 +67,6 @@ ladder = false;
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>201</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>obj_camera</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -119,6 +94,7 @@ key_down = keyboard_check(vk_down);
 key_jump_held = keyboard_check(vk_space);
 
 audio_sound_gain(snd_bgm_sunflowerfield,vol,0)
+audio_sound_gain(snd_jump,0.5,0)
 
 ///BGM Volume Control
 if (keyboard_check(ord('V')))
@@ -135,6 +111,7 @@ if (vsp &lt; 20) then vsp += grav;
 if (place_meeting(x,y+2,obj_wall))
 {
     vsp = key_jump * -jumpspeed
+    if (key_jump = 1) audio_play_sound(snd_jump,10,false)
 }
 
 if (vsp &lt; 0) &amp;&amp; (!key_jump_held) then vsp = max(vsp,-jumpspeed/4);
@@ -199,39 +176,9 @@ if (place_meeting(x,y+5,obj_wall))
 }
 else
 {
-    if (vsp &lt; 0 ) sprite_index = spr_playerjump; else sprite_index = spr_playerfall;
+    if (vsp &lt; 0 &amp;&amp; place_meeting(x,y+1+vsp,obj_wall) = false) sprite_index = spr_playerjump; else sprite_index = spr_playerfall;
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_rm_2_sign">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if !instance_exists(obj_roomtransition)
-{
-    var temproomfade;
-    temproomfade = instance_create(x,y,obj_roomtransition)
-    temproomfade.temptarget = other.targetroom;
-}
-player_x = other.target_x;
-player_y = other.target_y;
 </string>
           </argument>
         </arguments>

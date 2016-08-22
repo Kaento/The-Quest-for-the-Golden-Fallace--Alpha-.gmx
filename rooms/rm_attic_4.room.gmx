@@ -53,8 +53,8 @@
   <instances>
     <instance objName="obj_wall" x="-64" y="160" name="inst_A3EAD92C" locked="0" code="" scaleX="6.625" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1056" y="736" name="inst_B1DB8239" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_warp" x="992" y="0" name="inst_CF990178" locked="0" code="target_x = 32;&#xA;target_y = 670;&#xA;target_r = rm_attic_3;&#xA;" scaleX="1" scaleY="24.7741928100586" colour="4294967295" rotation="0"/>
-    <instance objName="obj_respawn" x="-32" y="832" name="inst_C9AEE88F" locked="0" code="target_x = 950;&#xA;target_y = 670;&#xA;" scaleX="36" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_warp" x="992" y="0" name="inst_CF990178" locked="0" code="target_x = 32;&#xA;target_y = 670;&#xA;target_r = rm_attic_3;&#xA;play_sfx = 0;&#xA;" scaleX="1" scaleY="24.7741928100586" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn" x="-32" y="832" name="inst_C9AEE88F" locked="0" code="target_x = 950;&#xA;target_y = 670;" scaleX="36" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="768" y="288" name="inst_FCA9E4D6" locked="0" code="" scaleX="1.25" scaleY="0.125" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="224" y="384" name="inst_9A187777" locked="0" code="" scaleX="1.25" scaleY="0.125" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="448" y="416" name="inst_78605C6E" locked="0" code="" scaleX="1.25" scaleY="0.125" colour="4294967295" rotation="0"/>
@@ -71,6 +71,7 @@
     <instance objName="object2" x="32" y="120" name="inst_9601A822" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tchest" x="96" y="119" name="inst_C1AA913F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trumpettrigger" x="96" y="119" name="inst_50E7629F" locked="0" code="" scaleX="1" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
+    <instance objName="obj_death" x="864" y="736" name="inst_596C3318" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -7,6 +7,8 @@
   <sounds name="sound">
     <sound>sound\snd_trumpet</sound>
     <sound>sound\snd_bgm_sunflowerfield</sound>
+    <sound>sound\snd_splash</sound>
+    <sound>sound\snd_jump</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_trigger</sprite>
@@ -26,7 +28,6 @@
     <sprite>sprites\spr_playerstand</sprite>
     <sprite>sprites\spr_playermask</sprite>
     <sprite>sprites\spr_menu_arrow</sprite>
-    <sprite>sprites\fht</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -39,6 +40,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_start_menu.gml</script>
+    <script>scripts\script1.gml</script>
+    <script>scripts\scr_respawn.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Menu</font>
@@ -61,7 +64,8 @@
     <object>objects\obj_start_menu</object>
     <object>objects\obj_notwall</object>
     <object>objects\obj_dong</object>
-    <object>objects\object17</object>
+    <object>objects\obj_chkpt</object>
+    <object>objects\obj_death</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_menu</room>
