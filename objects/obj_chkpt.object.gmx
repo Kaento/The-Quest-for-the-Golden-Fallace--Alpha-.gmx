@@ -28,6 +28,7 @@
             <string>global.chkpt_x = obj_chkpt.x
 global.chkpt_y = obj_chkpt.y - 32
 global.chkpt_rm = room
+script_execute(scr_save)
 </string>
           </argument>
         </arguments>

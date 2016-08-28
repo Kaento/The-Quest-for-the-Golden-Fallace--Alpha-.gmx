@@ -28,6 +28,9 @@
             <string>///Intialize Variables
 menu[0] = "Start";
 menu[1] = "Quit";
+menu[2] = "File 1";
+menu[3] = "File 2";
+menu[4] = "File 3";
 
 space = 64;
 menu_position = 0;

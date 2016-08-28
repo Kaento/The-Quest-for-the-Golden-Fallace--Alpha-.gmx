@@ -179,6 +179,8 @@ else
     if (vsp &lt; 0 &amp;&amp; place_meeting(x,y+1+vsp,obj_wall) = false) sprite_index = spr_playerjump; else sprite_index = spr_playerfall;
 }
 
+//Death
+if (place_meeting(x,y,obj_death)) script_execute(scr_respawn)
 </string>
           </argument>
         </arguments>
