@@ -32,9 +32,6 @@ vsp = 0;
 jumpspeed = 21;
 movespeed = 8;
 vol = 0.5;
-global.chkpt_x = obj_player.x;
-global.chkpt_y = obj_player.y;
-global.chkpt_rm = room;
 </string>
           </argument>
         </arguments>

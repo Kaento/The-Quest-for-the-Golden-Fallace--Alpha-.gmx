@@ -60,7 +60,6 @@
     <instance objName="obj_wall" x="576" y="544" name="inst_2F0D4447" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="640" y="544" name="inst_39943BF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="832" y="608" name="inst_707C8D75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="992" y="672" name="inst_7B785A07" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="896" y="672" name="inst_7CD64386" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="par_ladder" x="512" y="704" name="inst_B72E575D" locked="0" code="" scaleX="1" scaleY="1" colour="4278190080" rotation="0"/>
     <instance objName="par_ladder" x="512" y="672" name="inst_CBA07134" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

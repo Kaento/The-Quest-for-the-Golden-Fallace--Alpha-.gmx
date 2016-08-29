@@ -40,9 +40,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_start_menu.gml</script>
-    <script>scripts\script1.gml</script>
     <script>scripts\scr_respawn.gml</script>
-    <script>scripts\scr_save.gml</script>
+    <script>scripts\scr_save1.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Menu</font>

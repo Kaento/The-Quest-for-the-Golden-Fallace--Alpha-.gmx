@@ -28,7 +28,9 @@
             <string>global.chkpt_x = obj_chkpt.x
 global.chkpt_y = obj_chkpt.y - 32
 global.chkpt_rm = room
-script_execute(scr_save)
+if (global.savefileno = 1) script_execute(scr_save1);
+if (global.savefileno = 2) script_execute(scr_save2);
+if (global.savefileno = 3) script_execute(scr_save3);
 </string>
           </argument>
         </arguments>
