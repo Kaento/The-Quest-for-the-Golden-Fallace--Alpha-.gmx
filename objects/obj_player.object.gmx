@@ -28,6 +28,8 @@
             <string>///Intialize Variables
 globalgrav = 2;
 hsp = 0;
+hsp_carry = 0;
+hsp_move = 0;
 vsp = 0;
 jumpspeed = 21;
 movespeed = 8;
@@ -96,22 +98,42 @@ audio_sound_gain(snd_jump,0.5,0)
 ///BGM Volume Control
 if (keyboard_check(ord('V')))
     {
-    if(keyboard_check_pressed(vk_up) &amp;&amp; vol &lt; 1) vol += 0.1;
-    if(keyboard_check_pressed(vk_down) &amp;&amp; vol &gt; 0) vol -= 0.1;
+    if(keyboard_check_pressed(vk_up) &amp;&amp; vol &lt; 1) 
+        {
+        vol += 0.1;
+        vol_last = -1
+        }
+    if(keyboard_check_pressed(vk_down) &amp;&amp; vol &gt; 0)
+        {
+        vol -= 0.1;
+        vol_last = -1
+        }
+    } 
+if (keyboard_check_pressed(ord('M')))
+    {
+    if (vol = 0 &amp;&amp; vol_last != -1) vol = vol_last
+    else
+        {
+        vol_last = vol
+        vol = 0
+        }
     } 
 
 //React to Inputs
 move = key_left + key_right;
-hsp = move * movespeed;
+hsp_move = move * movespeed;
 if (vsp &lt; 20) then vsp += grav;
 
 if (place_meeting(x,y+2,obj_wall))
 {
-    vsp = key_jump * -jumpspeed
+    if (key_jump) vsp = -jumpspeed
     if (key_jump = 1) audio_play_sound(snd_jump,10,false)
 }
 
 if (vsp &lt; 0) &amp;&amp; (!key_jump_held) then vsp = max(vsp,-jumpspeed/4);
+
+var hsp = hsp_move + hsp_carry;
+hsp_carry = 0;
 
 //Horizontal Collision
 if (place_meeting (x+hsp,y-1, obj_wall))

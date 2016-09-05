@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Moving Platforms</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sound>sound\snd_trumpet</sound>
     <sound>sound\snd_bgm_sunflowerfield</sound>
@@ -27,6 +29,7 @@
     <sprite>sprites\spr_playerrun</sprite>
     <sprite>sprites\spr_playerstand</sprite>
     <sprite>sprites\spr_playermask</sprite>
+    <sprite>sprites\spr_platform</sprite>
     <sprite>sprites\spr_menu_arrow</sprite>
   </sprites>
   <backgrounds name="background">
@@ -37,7 +40,9 @@
     <background>background\background5</background>
     <background>background\background4</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scr_start_menu.gml</script>
     <script>scripts\scr_respawn.gml</script>
@@ -66,6 +71,9 @@
     <object>objects\obj_dong</object>
     <object>objects\obj_chkpt</object>
     <object>objects\obj_death</object>
+    <object>objects\obj_hplatform</object>
+    <object>objects\obj_platform</object>
+    <object>objects\obj_stop</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start_menu</room>
